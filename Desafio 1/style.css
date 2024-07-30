@@ -1,0 +1,118 @@
+body {
+    background-color: rgb(227, 227, 240);
+    color: rgb(0, 0, 0);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+a:hover {
+    color: rgb(120, 120, 160);
+}
+
+h2 {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+h4 {
+    padding: 30px;
+    background-color: rgb(73, 112, 163);
+    color: white;
+}
+
+.titulo {
+    background-color: rgb(7, 36, 73);
+    padding: 20px;
+}
+
+.shoppings ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.shop {
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.shoppings a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+}
+
+.shoppings li {
+    padding: 20px;
+}
+
+.shoppings img {
+    border: 1px solid black;
+}
+
+.lista-filmes {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px;
+}
+
+.filmes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.filmes a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filmes img{
+    border: 1px solid black;
+}
+
+.tabela {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.tabela table {
+    width: 1000px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.tabela td {
+    padding: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: rgb(7, 36, 73);
+    height: 50px;
+    color: white;
+    font-size: 10px;
+    padding: 30px;
+}
