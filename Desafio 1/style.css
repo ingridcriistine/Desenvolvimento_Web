@@ -1,7 +1,9 @@
 body {
     background-color: rgb(227, 227, 240);
     color: rgb(0, 0, 0);
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     margin: 0px;
 }
 
@@ -9,6 +11,12 @@ a {
     text-decoration: none;
     cursor: pointer;
     color: black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+p {
+    color: white;
 }
 
 a:hover {
@@ -19,17 +27,46 @@ h2 {
     display: flex;
     justify-content: space-around;
     color: white;
+    margin-left: 40px;
+    font-family: "Port Lligat Slab", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
 }
 
 h4 {
     padding: 30px;
     background-color: rgb(73, 112, 163);
     color: white;
+    margin-top: 60px;
+    padding-left: 50px;
 }
 
 .titulo {
+    display: flex;
     background-color: rgb(7, 36, 73);
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 20px;
+}
+
+.login img {
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+    margin: 20px;
+}
+
+.login p {
+    font-size: 15px;
+    margin: 30px;
+    margin-left: 0px;
 }
 
 .shoppings ul {
@@ -44,7 +81,11 @@ h4 {
 
 .shop {
     border: 1px solid black;
-    border-radius: 3px;
+    border-radius: 20px;
+}
+
+.shop:hover a {
+    color: rgb(120, 120, 160);
 }
 
 .shoppings a {
@@ -61,6 +102,8 @@ h4 {
 
 .shoppings img {
     border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .lista-filmes {
@@ -76,7 +119,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     border: 1px solid black;
-    border-radius: 3px;
+    border-radius: 20px;
 }
 
 .filmes a {
@@ -88,6 +131,8 @@ h4 {
 
 .filmes img{
     border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .tabela {
@@ -100,6 +145,7 @@ h4 {
 .tabela table {
     width: 1000px;
     border: 1px solid rgb(0, 0, 0);
+    background-color: white;
 }
 
 .tabela td {
@@ -115,4 +161,15 @@ footer {
     color: white;
     font-size: 10px;
     padding: 30px;
+}
+
+.btn-more {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 46%;
+}
+
+.btn-more:hover {
+    background-color: rgb(174, 174, 189);
 }
