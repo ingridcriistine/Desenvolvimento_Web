@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(rgb(59, 10, 59), rgb(100, 7, 100));
+}
+
+.logo {
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-left: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pesquisa {
+    margin: 40px;   
+}
+
+.box-pesquisa {
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.btn-pesquisa {
+    border-radius: 5px;
+    width: 70px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.btn-pesquisa:hover {
+    background-color: rgb(187, 157, 216);
+    transition: 0.2s;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    margin-top: 70px;
+    font-size: 25px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.books img {
+    width: 350px;
+    height: 500px;
+}
+
+footer {
+    display: flex;
+    background: linear-gradient(rgb(59, 10, 59), rgb(100, 7, 100));
+    color: white;
+    height: 100px;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+h4 {
+    padding: 20px;
+}
