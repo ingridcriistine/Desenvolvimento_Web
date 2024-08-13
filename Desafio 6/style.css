@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.tb-livros {
+    margin-top: 20px;
+}
+
+table {
+    background-color: #272726;
+    width: 500px;
+}
+
+tr {
+    background-color: rgb(255, 231, 202);
+    height: 30px;
+}
+
+td {
+    padding: 10px;
+}
