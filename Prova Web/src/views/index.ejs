@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ingrid">
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+        <script src="../js/script.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Port+Lligat+Slab&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img src="img/engrenagem.png">
+            <a href="/index" class="header-nome">Suporte Técnico</a>
+        </header>
+
+        <main>
+            <div class="cards row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <h5 class="card-title">DISPOSITIVOS</h5>
+                    <div class="card-img"><img src="img/computador.png" class="card-img-top" alt="..."></div>
+                    <div class="card-body">
+                        <a href="/forms1"><button class="btn btn-primary btn-card" type="submit">ABRIR CHAMADO</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                      <h5 class="card-title">PERIFÉRICOS</h5>
+                      <div class="card-img"><img src="img/perifericos.png" class="card-img-top" alt="..."></div>
+                      <div class="card-body">
+                          <a href="/forms2"><button class="btn btn-primary btn-card" type="submit">ABRIR CHAMADO</button></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <h5 class="card-title">SOFTWARE</h5>
+                      <div class="card-img"><img src="img/software.png" class="card-img-top" alt="..."></div>
+                      <div class="card-body">
+                          <a href="/forms3"><button class="btn btn-primary btn-card" type="submit">ABRIR CHAMADO</button></a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <hr>
+            <div class="chamados">
+                <div class="header-chamados">
+                    <h3>CHAMADOS</h3>
+                    <div class="modal-deleteAll">
+                        <button class="btn-chamado" type="button" onclick="exibirAlerta()">LIMPAR CHAMADOS</button>
+                        <img src="img/deleteAll.svg">
+                    </div>
+                </div>
+
+                <table class="tabela-chamados">
+                <tr>
+                    <td><b>#</b></td>
+                    <td><b>CLIENTE</b></td>
+                    <td><b>PROBLEMA</b></td>
+                    <td><b>TIPO</b></td>
+                    <td><b>AÇÕES</b></td>
+                </tr>
+                <% for (let i=0; i < chamados.length; i++) { %>
+                    <tr>
+                        <td><%= chamados[i].IDChamado %></td>
+                        <td><%= chamados[i].Cliente%></td>
+                        <td><%= chamados[i].Descrição %></td>
+                        <td><%= chamados[i].Tipo %></td>
+                        <td class="btns-forms">
+                            <form action="/editarChamado/<%= chamados[i].IDChamado %>" method="get">
+                                <button type="submit"><img src="img/editar.svg" class="btn-editar"></button> | 
+                            </form>
+                            <button type="submit"><img src="img/delete.svg" name="envio" class="btn-excluir" value="Excluir"></button>
+                        </td>
+                    </tr>
+                <% } %>
+                </table>
+            </div>
+
+            <!-- <div class="form-editar" id="form-editar">
+                <form class="col-md-4 form-chamados" action="/index/<%= chamados.IDChamado %>" method="post">
+                    <h2>EDITAR CHAMADO</h2>
+                    <div class="form-editar-header">
+                        <div class="form-group mb-4">
+                            <label for="id">ID: </label>
+                            <input type="number" class="form-control" id="id" name="id">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="nome">Cliente: </label>
+                            <input type="text" class="form-control" id="nome" name="nome">
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="descricao">Descrição:</label>
+                        <input type="text" class="form-control" id="descricao" name="descricao" value="<%= chamados.Descrição %>">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="tipo">Tipo: </label>
+                        <input type="text" class="form-control" id="tipo" name="tipo" value="<%= chamados.Tipo %>">
+                    </div>
+                    <div class="btns-form-editar">
+                        <button class="btn btn-forms btn-cancelar" onclick="esconder()">CANCELAR</button>
+                        <button class="btn btn-forms" type="submit">SALVAR</button>
+                    </div>
+                </form>
+            </div> -->
+        </main>
+
+        <footer></footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+    </body>
+</html>

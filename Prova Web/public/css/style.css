@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    background-color: rgb(221, 221, 221);
+    width: 100%;
+    
+}
+
+header {
+    width: 100%;
+    gap: 1%;
+    background: linear-gradient(to right, rgb(22, 69, 129), #0078bd, #0b8fdb);
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header img {
+    width: 3%;
+    margin-left: 1%;
+}
+
+header a {
+    font-size:  28px;
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.col {
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    margin: 2%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px black;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+.card img {
+    width: 35%;
+}
+
+.card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    height: 120px;
+}
+
+.btn-card {
+    border-radius: 7px;
+    font-size: 12px;
+    padding: 5px;
+    margin-top: 20%;
+    background-color: rgb(22, 69, 129);
+    color: white;
+}
+
+.btn-card:hover {
+    background-color: rgb(33, 94, 173);
+}
+
+hr {
+    width: 98%;
+}
+
+.header-chamados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1%;
+}
+
+.modal-deleteAll {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.modal-deleteAll button {
+    /* display: none; */
+    border: none;
+    background-color: none;
+}
+
+.modal-deleteAll img {
+    padding: 5px;
+}
+
+.tabela-chamados {
+    width: 100%;
+    padding: 15px;
+}
+
+.tabela-chamados  td {
+    padding: 5px;
+    background-color: white;
+}
+
+.btn-editar, .btn-excluir {
+    cursor: pointer;
+}
+
+.tabela-chamados button{
+    border: none;
+}
+
+/*-------------------------------------- Form ----------------------------------------------*/
+.main-forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.form-chamados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 50%;
+    height: 450px;
+    border-radius: 15px;
+}
+
+.form-chamados h2 {
+    margin: 4%;
+    color: rgb(22, 69, 129);
+    font-weight: 800;
+}
+
+.form-group {
+    margin: 0.7%;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 5px;
+}
+
+.form-group label {
+    padding-bottom: 10px;
+}
+
+.form-group  input {
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid rgb(161, 161, 161);
+}
+
+.btn-forms {
+    width: 85%;
+    padding: 7px;
+    font-size: 12px;
+    background-color: rgb(33, 94, 173);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(161, 161, 161);
+    margin-top: 10px;
+}
+
+/*---------------------------------------------*/
+.form-editar {
+    width: 50%;
+    /* display: none; */
+    position: fixed; 
+    z-index: 1; 
+    left: 40%;
+    top: 20%;
+    /* background-color: rgba(0,0,0,0.4); */
+}
+
+.btns-form-editar, .form-editar-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.btns-forms {
+    display: flex;
+}
